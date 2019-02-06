@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Item lister</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h1>Item Lister</h1>
+            </div>
+            <div class="col-6 align-self-center">
+                <div class=" d-flex flex-row-reverse"><input id="filter" class="form-control" type="text"
+                                                                         placeholder="Search items...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<div class="container">
+    <div id="main" class="card card-body">
+        <div class="row">
+            <div class="col-12">
+                <h4>Add Items</h4>
+                <form id="addForm">
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <input id="item" class="form-control" type="text">
+                        </div>
+                        <div class="col-sm-9">
+                            <input class="btn btn-dark" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </form>
+                <h2 class="title">Items</h2>
+                <ul id="items" class="list-group">
+                    <li class="list-group-item">Item 1
+                        <button class="btn btn-danger btn-sm float-right delete">X
+                        </button>
+                    </li>
+                    <li class="list-group-item">Item 2
+                        <button class="btn btn-danger btn-sm float-right delete">X
+                        </button>
+                    </li>
+                    <li class="list-group-item">Item 3
+                        <button class="btn btn-danger btn-sm float-right delete">X
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    header {
+        background: lightblue;
+        padding: 20px;
+    }
+
+    header h1 {
+        color: #fff;
+    }
+
+    #main {
+        margin-top: 20px;
+    }
+
+    .list-group .list-group-item:nth-child(odd) {
+        background: #ddd;
+    }
+</style>
+<script src="script.js"></script>
+</body>
+</html>
